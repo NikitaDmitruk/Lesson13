@@ -1,10 +1,6 @@
 package TaskOne;
 
 public class Authenticator {
-    private String login;
-    private String password;
-    private String confirmPassword;
-
     public static boolean singIn(String login, String password, String confirmPassword) {
         try {
             if (!login.matches("^(?!.*\\s).{1,19}$")) {
